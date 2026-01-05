@@ -1,4 +1,4 @@
-const harryTechLogo = "/others/harrytech-logo.png";
+import { logos } from "@/assets/assets";
 
 interface LogoProps {
   className?: string;
@@ -11,7 +11,7 @@ export default function Logo({
 }: LogoProps) {
   return (
     <div className="flex items-center gap-2">
-      <img src={harryTechLogo} alt="HarryTech Logo" className={className} />
+      <img src={logos.mainLogo} alt="HarryTech Logo" className={className} />
       {showText && (
         <span className="font-bold text-xl tracking-tight">
           Harry<span className="text-primary">Tech</span>

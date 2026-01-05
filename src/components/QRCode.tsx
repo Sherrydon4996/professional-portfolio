@@ -7,7 +7,7 @@ interface QRCodeProps {
 }
 
 export default function QRCodeDisplay({
-  url = "https://edwinnjogu.dev",
+  url = "https://www.harrytechservices.com",
   size = 150,
 }: QRCodeProps) {
   // Generate QR code using a free API

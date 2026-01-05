@@ -37,3 +37,11 @@ export const audios = {
 export const files = {
   cv: "src/assets/others/Edwin's_resume.pdf",
 };
+
+export const logos = {
+  mainLogo: "src/assets/others/harrytech-logo.png",
+};
+
+export const statsImage = {
+  image1: "src/assets/others/statsImage.jpeg",
+};
