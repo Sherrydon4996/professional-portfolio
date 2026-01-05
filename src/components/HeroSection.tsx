@@ -1,3 +1,4 @@
+import { allHeroImages } from "@/assets/assets";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Download,
@@ -8,13 +9,11 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import edwinProfile from "/others/Clean_profile.png";
-import heroPerson1 from "/others/hero-person-1.jpg";
-import heroPerson2 from "/others/hero-person-2.jpg";
+
 const heroImages = [
-  { src: edwinProfile, alt: "Edwin Njogu - Full-Stack Developer" },
-  { src: heroPerson1, alt: "Professional developer working on laptop" },
-  { src: heroPerson2, alt: "African entrepreneur working on laptop" },
+  { src: allHeroImages[0], alt: "Edwin Njogu - Full-Stack Developer" },
+  { src: allHeroImages[1], alt: "Professional developer working on laptop" },
+  { src: allHeroImages[2], alt: "African entrepreneur working on laptop" },
 ];
 const socialLinks = [
   {
@@ -47,7 +46,7 @@ export default function HeroSection() {
   useEffect(() => {
     const imageInterval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(imageInterval);
   }, []);
   useEffect(() => {

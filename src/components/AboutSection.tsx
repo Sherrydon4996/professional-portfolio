@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import { Heart, Coffee, Code, Lightbulb } from "lucide-react";
 import { useState } from "react";
-import aboutImage from "/about-person.jpg"; // Add your image path here, e.g., place about-person.jpg in public folder or adjust import
+import { aboutImages } from "@/assets/assets";
 
 const highlights = [
   { icon: Code, value: "10+", label: "Projects Completed" },
@@ -43,7 +43,7 @@ export default function AboutSection() {
               {/* Main Card */}
               <div className="glass-card p-8 rounded-3xl">
                 <img
-                  src="/websites_thumbnail/coding.jpg"
+                  src={aboutImages.codes_image}
                   alt="Person working on laptop"
                   className="w-full h-auto rounded-2xl object-cover aspect-square"
                 />

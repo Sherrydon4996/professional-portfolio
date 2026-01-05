@@ -1,10 +1,12 @@
+import { portfolioImages } from "./../assets/assets";
+
 export const testimonials = [
   {
     id: 1,
     name: "John Karanja",
     role: "CTO, TechVision Inc.",
     company: "TechVision Inc.",
-    avatar: "/others/OIP.webp",
+    avatar: portfolioImages.j_karanja,
     rating: 5,
     text: "Working with harryTech has been transformative for our business. Their expertise in React and Node.js helped us build a scalable platform that handles the requirements of clients seamlessly. The attention to detail and commitment to excellence is outstanding.",
     project: "E-commerce Platform",
@@ -14,7 +16,7 @@ export const testimonials = [
     name: "Michael Kim",
     role: "Product Manager, DataFlow Solutions",
     company: "DataFlow Solutions",
-    avatar: "/others/blob.png",
+    avatar: portfolioImages.M_kim,
     rating: 5,
     text: ". Harrytech delivered a modern and sturning real-estate services platform ahead of schedule and exceeded all performance requirements. The code quality is impeccable and well-documented.",
     project: "Real estate website",
@@ -24,7 +26,7 @@ export const testimonials = [
     name: "Victor Omali",
     role: "Founder, StartupHub",
     company: "StartupHub",
-    avatar: "/others/Matabane.jpg",
+    avatar: portfolioImages.V_omari,
     rating: 5,
     text: "We were guided through every step of our digital transformation from posters to a fully working wifi website.  HarryTech expertise and problem-solving abilities turned our vision into a reality. Highly recommended for any serious project.",
     project: "Wifi website",
