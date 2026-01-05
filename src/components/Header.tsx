@@ -9,11 +9,11 @@ import { useActiveSection } from "@/hooks/useIntersectionObserver";
 import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
-  { id: "hero", label: "Home", href: "/#hero", icon: "🏠" },
-  { id: "services", label: "Services", href: "/#services" },
-  { id: "projects", label: "Projects", href: "/#projects" },
-  { id: "skills", label: "Skills", href: "/#skills" },
-  { id: "about", label: "About", href: "/#about" },
+  { id: "hero", label: "Home", href: "/", icon: "🏠" },
+  { id: "services", label: "Services", href: "/" },
+  { id: "projects", label: "Projects", href: "/" },
+  { id: "skills", label: "Skills", href: "/" },
+  { id: "about", label: "About", href: "/" },
   { id: "hire-me", label: "Hire Me", href: "/hire-me", isPage: true },
   { id: "pricing", label: "Pricing", href: "/pricing", isPage: true },
   {
