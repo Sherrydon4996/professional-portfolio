@@ -29,3 +29,11 @@ export const portfolioImages = {
 export const aboutImages = {
   codes_image: "src/assets/websites_thumbnail/coding.jpg",
 };
+//Audios
+export const audios = {
+  hero: "src/assets/others/clip-Emmanuel-2026_01_03.wav",
+};
+//Downlaoadable files
+export const files = {
+  cv: "src/assets/others/Edwin's_resume.pdf",
+};

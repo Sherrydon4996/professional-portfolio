@@ -1,4 +1,4 @@
-import { allHeroImages } from "@/assets/assets";
+import { allHeroImages, audios, files } from "@/assets/assets";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Download,
@@ -46,7 +46,7 @@ export default function HeroSection() {
   useEffect(() => {
     const imageInterval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
-    }, 10000);
+    }, 11000);
     return () => clearInterval(imageInterval);
   }, []);
   useEffect(() => {
@@ -193,8 +193,8 @@ export default function HeroSection() {
             >
               {/* Download CV Button - Updated with href and download */}
               <motion.a
-                href="/others/Edwin's_resume.pdf"
-                download="/others/Edwin's_resume.pdf"
+                href={files.cv}
+                download={files.cv}
                 className="btn-gradient flex items-center gap-2 sm:gap-3 group"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -255,10 +255,7 @@ export default function HeroSection() {
                   ))}
                 </div>
               </motion.button>
-              <audio
-                ref={audioRef}
-                src="/others/clip-Emmanuel-2026_01_03.wav"
-              />
+              <audio ref={audioRef} src={audios.hero} />
             </motion.div>
             {/* Social Links */}
             <motion.div
