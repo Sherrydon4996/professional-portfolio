@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, Bot, X, Trash2, Send } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-import Logo from "./Logo";
+
 import { getFormattedDataForAI } from "@/lib/botInfor";
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
