@@ -1,8 +1,8 @@
 // hero section images
 
 import edwinProfile from "../assets/others/Clean_profile.png";
-import heroPerson1 from "../assets/others/hero-person-1.jpg";
-import heroPerson2 from "../assets/others/hero-person-2.jpg";
+import heroPerson1 from "/hero-image2.jpeg";
+import heroPerson2 from "/hero-image22.jpg";
 import MS from "../assets/systems/house.png";
 import BP from "../assets/Portfolios/Broad_Portfolio.png";
 import EC from "../assets/websites_thumbnail/clothes_ecommerce.png";
