@@ -21,7 +21,7 @@ export default function CTABanner() {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
+            background: `radial-gradient(circle at 2px 2px, white 1px, transparent 0)`,
             backgroundSize: "32px 32px",
           }}
         />
