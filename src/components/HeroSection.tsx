@@ -1,4 +1,4 @@
-// import { allHeroImages, audios, files } from "@/assets/assets";
+import { allHeroImages, audios, files } from "@/assets/assets";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Download,
@@ -9,20 +9,18 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
-const audio = "/others/clip-Emmanuel-2026_01_03.wav";
-const file = "/others/Edwin's_resume.pdf";
 
 const heroImages = [
   {
-    src: "/others/Clean_profile.png",
+    src: allHeroImages[0],
     alt: "Edwin Njogu - Full-Stack Developer",
   },
   {
-    src: "/others/hero-person-1.jpg",
+    src: allHeroImages[1],
     alt: "Professional developer working on laptop",
   },
   {
-    src: "/others/hero-person-2.jpg",
+    src: allHeroImages[2],
     alt: "African entrepreneur working on laptop",
   },
 ];
@@ -204,8 +202,8 @@ export default function HeroSection() {
             >
               {/* Download CV Button - Updated with href and download */}
               <motion.a
-                href={file}
-                download={file}
+                href={files.cv}
+                download={files.cv}
                 className="btn-gradient flex items-center gap-2 sm:gap-3 group"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -266,7 +264,7 @@ export default function HeroSection() {
                   ))}
                 </div>
               </motion.button>
-              <audio ref={audioRef} src={audio} />
+              <audio ref={audioRef} src={audios.hero} />
             </motion.div>
             {/* Social Links */}
             <motion.div

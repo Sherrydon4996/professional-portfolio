@@ -1,4 +1,4 @@
-// import { projectImages } from "@/assets/assets";
+import { projectImages } from "@/assets/assets";
 
 export const allProjects = [
   {
@@ -7,8 +7,8 @@ export const allProjects = [
     description:
       "Comprehensive system for managing residential properties and rentals.",
     category: "management system",
-    // image: projectImages.managementSystem,
-    image: "/systems/house.png",
+    image: projectImages.managementSystem,
+    // image: "/systems/house.png",
     technologies: [
       "React",
       "JavaScript",
@@ -28,8 +28,8 @@ export const allProjects = [
     description:
       "Portfolio highlighting a wide range of professional services.",
     category: "Websites",
-    // image: projectImages.broad_portfolio,
-    image: "/Portfolios/Broad_Portfolio.png",
+    image: projectImages.broad_portfolio,
+    //image: "/Portfolios/Broad_Portfolio.png",
     technologies: [
       "React",
       "Tailwind CSS",
@@ -47,8 +47,8 @@ export const allProjects = [
     description:
       "Online store specializing in clothing and apparel with secure checkout.",
     category: "Websites",
-    // image: projectImages.ecommerce_clothes,
-    image: "/websites_thumbnail/clothes_ecommerce.png",
+    image: projectImages.ecommerce_clothes,
+    //image: "/websites_thumbnail/clothes_ecommerce.png",
     technologies: ["React", "JavaScript", "Express.js", "Supabase"],
     liveUrl: "https://patos-front-end-hcke.vercel.app/",
     githubUrl: "#",
@@ -60,8 +60,8 @@ export const allProjects = [
     description:
       "Platform for hair styling, manicure, and pedicure services with booking features.",
     category: "Websites",
-    // image: projectImages.beauty_services,
-    image: "/websites_thumbnail/beauty.png",
+    image: projectImages.beauty_services,
+    //image: "/websites_thumbnail/beauty.png",
     technologies: ["Next.js", "React", "JavaScript"],
     liveUrl: "https://beauty-live-website.vercel.app/",
     githubUrl: "#",
@@ -73,8 +73,8 @@ export const allProjects = [
     description:
       "Site offering internet and WiFi services with plan comparisons and sign-ups.",
     category: "Websites",
-    // image: projectImages.wifi_services,
-    image: "/websites_thumbnail/wifi.png",
+    image: projectImages.wifi_services,
+    //image: "/websites_thumbnail/wifi.png",
     technologies: ["Next.js", "React", "JavaScript"],
     liveUrl: "https://wifi-servicesnextjs.vercel.app/",
     githubUrl: "#",
@@ -86,8 +86,8 @@ export const allProjects = [
     description:
       "Online showcase for a bakery featuring cakes, bread, and ordering options.",
     category: "Websites",
-    // image: projectImages.bakery_website,
-    image: "/websites_thumbnail/Bakery.png",
+    image: projectImages.bakery_website,
+    //image: "/websites_thumbnail/Bakery.png",
     technologies: ["React", "Tailwind CSS", "TypeScript", "JavaScript"],
     liveUrl: "#",
     githubUrl: "#",
@@ -98,8 +98,8 @@ export const allProjects = [
     title: "Simple Personal Portfolio",
     description: "Minimalist website showcasing personal projects and skills.",
     category: "Websites",
-    // image: projectImages.simple_portfolio,
-    image: "/Portfolios/harrytech.png",
+    image: projectImages.simple_portfolio,
+    //image: "/Portfolios/harrytech.png",
     technologies: ["React", "JavaScript"],
     liveUrl: "#",
     githubUrl: "#",
@@ -111,8 +111,8 @@ export const allProjects = [
     title: "Marketing Portfolio",
     description: "Showcase of marketing projects, campaigns, and strategies.",
     category: "Websites",
-    // image: projectImages.marketing_portfolio,
-    image: "/Portfolios/marketing_portfolio.png",
+    image: projectImages.marketing_portfolio,
+    //image: "/Portfolios/marketing_portfolio.png",
     technologies: [
       "React",
       "Tailwind CSS",
@@ -130,8 +130,8 @@ export const allProjects = [
     description:
       "Platform for property listings, searches, and real estate management.",
     category: "Websites",
-    // image: projectImages.real_estate,
-    image: "/websites_thumbnail/real-estate.png",
+    image: projectImages.real_estate,
+    //image: "/websites_thumbnail/real-estate.png",
     technologies: ["React", "JavaScript", "Next.js"],
     liveUrl: "https://real-estate-nextjs-one-sigma.vercel.app/",
     githubUrl: "#",

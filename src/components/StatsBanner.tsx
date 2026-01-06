@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useIntersectionObserver } from "@/hooks/useIntersectionObserver";
 import CountUp from "react-countup";
 import { Rocket } from "lucide-react";
-// import { statsImage } from "@/assets/assets";
+import { statsImage } from "@/assets/assets";
 
 const stats = [
   { value: 10, suffix: "+", label: "Projects Completed" },
@@ -56,7 +56,7 @@ export default function StatsBanner() {
         <div
           className="absolute inset-0 opacity-10 bg-cover bg-center"
           style={{
-            backgroundImage: `url(/others/statsImage.jpeg)`,
+            backgroundImage: `url(${statsImage.image1})`,
             backgroundBlendMode: "overlay",
           }}
         />
