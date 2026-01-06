@@ -101,7 +101,7 @@ export const allProjects = [
     image: projectImages.simple_portfolio,
     //image: "/Portfolios/harrytech.png",
     technologies: ["React", "JavaScript"],
-    liveUrl: "#",
+    liveUrl: "https://harry-tech-portfolio.vercel.app/",
     githubUrl: "#",
     gradient: "from-indigo-500 to-violet-500",
   },
