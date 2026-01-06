@@ -16,7 +16,6 @@ export default function StatsBanner() {
     threshold: 0.2,
     freezeOnceVisible: true,
   });
-  const bgImage = statsImage.image1;
 
   return (
     <section
@@ -57,7 +56,7 @@ export default function StatsBanner() {
         <div
           className="absolute inset-0 opacity-10 bg-cover bg-center"
           style={{
-            backgroundImage: bgImage,
+            backgroundImage: `url(${statsImage.image1})`,
             backgroundBlendMode: "overlay",
           }}
         />
