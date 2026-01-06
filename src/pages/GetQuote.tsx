@@ -163,7 +163,6 @@ export default function GetQuote() {
                     <motion.a
                       key={item.label}
                       href={item.href}
-                      rel="noopener noreferrer"
                       target={
                         item.href.startsWith("http") ? "_blank" : undefined
                       }

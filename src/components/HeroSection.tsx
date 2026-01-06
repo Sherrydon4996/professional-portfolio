@@ -313,6 +313,8 @@ export default function HeroSection() {
                     key={currentImageIndex}
                     src={heroImages[currentImageIndex].src}
                     alt={heroImages[currentImageIndex].alt}
+                    loading="eager"
+                    fetchPriority="high"
                     className="w-[400px] h-auto sm:w-[380px] md:w-[420px] lg:w-[480px] xl:w-[560px] object-contain drop-shadow-2xl"
                     initial={{ opacity: 0, scale: 1.1 }}
                     animate={{ opacity: 1, scale: 1 }}
