@@ -69,7 +69,7 @@ export default function HeroSection() {
 
     Promise.all(imagePromises)
       .then(() => setImagesLoaded(true))
-      .catch(() => setImagesLoaded(true)); // Continue even if some images fail
+      .catch(() => setImagesLoaded(true));
   }, []);
 
   // Image carousel effect
@@ -140,7 +140,7 @@ export default function HeroSection() {
       className="min-h-screen flex items-center relative overflow-hidden pt-24"
       style={{ background: "var(--gradient-hero)" }}
     >
-      {/* Background Elements - Simplified for mobile performance */}
+      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           className="absolute top-20 left-10 w-72 h-72 rounded-full bg-primary/10 blur-3xl"
@@ -148,7 +148,7 @@ export default function HeroSection() {
             scale: [1, 1.2, 1],
             opacity: [0.3, 0.5, 0.3],
           }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
           className="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-accent/10 blur-3xl"
@@ -157,11 +157,16 @@ export default function HeroSection() {
             opacity: [0.3, 0.5, 0.3],
           }}
           transition={{
-            duration: 8,
+            duration: 10,
             repeat: Infinity,
-            delay: 2,
+            delay: 3,
             ease: "easeInOut",
           }}
+        />
+        <motion.div
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-radial from-primary/5 to-transparent"
+          animate={{ rotate: 360 }}
+          transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
         />
       </div>
 
@@ -336,7 +341,7 @@ export default function HeroSection() {
             className="order-1 lg:order-2 flex justify-center"
           >
             <div className="relative">
-              {/* Profile Image Carousel - Optimized */}
+              {/* Profile Image Carousel */}
               <div className="relative z-10 overflow-hidden">
                 <AnimatePresence mode="sync" initial={false}>
                   <motion.img
@@ -349,58 +354,132 @@ export default function HeroSection() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
-                    style={{ willChange: "opacity" }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      willChange: "opacity",
+                    }}
                   />
                 </AnimatePresence>
+                {/* Placeholder to maintain space */}
+                <img
+                  src={heroImages[0].src}
+                  alt="placeholder"
+                  className="w-[400px] h-auto sm:w-[380px] md:w-[420px] lg:w-[480px] xl:w-[560px] object-contain invisible"
+                  aria-hidden="true"
+                />
 
-                {/* Floating Tags - Reduced animation complexity */}
-                <div className="absolute top-2 sm:top-4 -left-2 sm:-left-6 glass-card px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg z-20">
+                {/* Floating Tags - Slower, gentler animations */}
+                <motion.div
+                  className="absolute top-2 sm:top-4 -left-2 sm:-left-6 glass-card px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg z-20"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0, y: [0, -4, 0] }}
+                  transition={{
+                    opacity: { delay: 0.5, duration: 0.5 },
+                    x: { delay: 0.5, duration: 0.5 },
+                    y: { duration: 5, repeat: Infinity, ease: "easeInOut" },
+                  }}
+                >
                   <span className="text-xs sm:text-sm font-semibold text-primary">
                     Developer
                   </span>
-                </div>
+                </motion.div>
 
-                <div className="absolute top-12 sm:top-16 -right-2 sm:-right-8 glass-card px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg z-20">
+                <motion.div
+                  className="absolute top-12 sm:top-16 -right-2 sm:-right-8 glass-card px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg z-20"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0, y: [0, 4, 0] }}
+                  transition={{
+                    opacity: { delay: 0.7, duration: 0.5 },
+                    x: { delay: 0.7, duration: 0.5 },
+                    y: { duration: 5.5, repeat: Infinity, ease: "easeInOut" },
+                  }}
+                >
                   <span className="text-xs sm:text-sm font-semibold text-accent">
                     AI Expert
                   </span>
-                </div>
+                </motion.div>
 
-                <div className="absolute top-1/3 -left-4 sm:-left-12 glass-card px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg z-20">
+                <motion.div
+                  className="absolute top-1/3 -left-4 sm:-left-12 glass-card px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg z-20"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0, y: [0, 6, 0] }}
+                  transition={{
+                    opacity: { delay: 0.9, duration: 0.5 },
+                    x: { delay: 0.9, duration: 0.5 },
+                    y: { duration: 6, repeat: Infinity, ease: "easeInOut" },
+                  }}
+                >
                   <span className="text-xs sm:text-sm font-semibold">
                     React.js
                   </span>
-                </div>
+                </motion.div>
 
-                <div className="absolute top-1/2 -right-4 sm:-right-10 glass-card px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg z-20">
+                <motion.div
+                  className="absolute top-1/2 -right-4 sm:-right-10 glass-card px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg z-20"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0, y: [0, -5, 0] }}
+                  transition={{
+                    opacity: { delay: 1.1, duration: 0.5 },
+                    x: { delay: 1.1, duration: 0.5 },
+                    y: { duration: 5.8, repeat: Infinity, ease: "easeInOut" },
+                  }}
+                >
                   <span className="text-xs sm:text-sm font-semibold">
                     Node.js
                   </span>
-                </div>
+                </motion.div>
               </div>
 
-              {/* Floating Stats Elements - Static positioning, removed continuous animations */}
-              <div className="absolute -top-2 right-0 sm:-right-4 glass-card px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg z-20">
+              {/* Floating Stats Elements - Slower animations */}
+              <motion.div
+                className="absolute -top-2 right-0 sm:-right-4 glass-card px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg z-20"
+                animate={{ y: [0, -6, 0] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              >
                 <span className="text-lg sm:text-xl">🚀</span>
                 <span className="ml-1.5 sm:ml-2 font-semibold text-xs sm:text-sm">
                   2+ Years
                 </span>
-              </div>
+              </motion.div>
 
-              <div className="absolute bottom-8 sm:bottom-12 -left-4 sm:-left-8 glass-card px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg z-20">
+              <motion.div
+                className="absolute bottom-8 sm:bottom-12 -left-4 sm:-left-8 glass-card px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg z-20"
+                animate={{ y: [0, 6, 0] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1.5,
+                }}
+              >
                 <span className="text-lg sm:text-xl">💼</span>
                 <span className="ml-1.5 sm:ml-2 font-semibold text-xs sm:text-sm">
                   10+ Projects
                 </span>
-              </div>
+              </motion.div>
 
-              <div className="absolute bottom-1/3 -right-4 sm:-right-12 glass-card px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg z-20">
+              <motion.div
+                className="absolute bottom-1/3 -right-4 sm:-right-12 glass-card px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-lg z-20"
+                animate={{ x: [0, 6, 0] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 3,
+                }}
+              >
                 <span className="text-lg sm:text-xl">⭐</span>
                 <span className="ml-1.5 sm:ml-2 font-semibold text-xs sm:text-sm">
                   100% Quality
                 </span>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>
