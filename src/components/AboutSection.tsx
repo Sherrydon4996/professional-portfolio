@@ -98,7 +98,7 @@ export default function AboutSection() {
               My Journey
             </h2>
 
-            <div className="space-y-4 text-muted-foreground text-lg mb-8">
+            <div className="space-y-4 text-muted-foreground text-lg sm:text-sm md:text-base mb-8">
               <p>
                 I'm a passionate fullStack developer with almost 3 years of
                 experience crafting innovative digital solutions that solve real
