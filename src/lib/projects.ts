@@ -6,7 +6,7 @@ export const allProjects = [
     title: "House Management System",
     description:
       "Comprehensive system for managing residential properties and rentals.",
-    category: "management system",
+    category: "Management Systems",
     image: projectImages.managementSystem,
     // image: "/systems/house.png",
     technologies: [
