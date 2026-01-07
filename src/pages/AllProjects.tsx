@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";

@@ -12,6 +12,7 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QRCodeDisplay from "@/components/QRCode";
+import { useEffect } from "react";
 
 const sections = [
   {

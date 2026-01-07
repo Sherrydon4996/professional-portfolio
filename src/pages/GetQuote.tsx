@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Send, Mail, Phone, MessageCircle, MapPin } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
