@@ -121,7 +121,7 @@ export default function HireMe() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen px-3 bg-background text-foreground">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container-custom">

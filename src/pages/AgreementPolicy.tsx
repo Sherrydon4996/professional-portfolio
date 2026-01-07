@@ -194,7 +194,7 @@ export default function AgreementPolicy() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground px-3">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container-custom max-w-5xl">
@@ -208,7 +208,7 @@ export default function AgreementPolicy() {
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
               Legal & Policies
             </span>
-            <h1 className="text-4xl md:text-5xl font-black mb-6">
+            <h1 className="text-3xl md:text-5xl font-black mb-6">
               Agreement & <span className="gradient-text">Policy</span>
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">

@@ -344,7 +344,7 @@ export default function Pricing() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground px-3">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container-custom">

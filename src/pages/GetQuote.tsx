@@ -128,7 +128,7 @@ export default function GetQuote() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen px-3 bg-background text-foreground">
       <Header />
       <main className="pt-32 pb-20">
         <div className="container-custom">
@@ -185,10 +185,10 @@ export default function GetQuote() {
                         <item.icon size={20} className="text-white" />
                       </div>
                       <div>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-xs md:text-base text-muted-foreground">
                           {item.label}
                         </p>
-                        <p className="font-medium group-hover:text-primary transition-colors">
+                        <p className="text-xs md:text-base  font-medium group-hover:text-primary transition-colors">
                           {item.value}
                         </p>
                       </div>
@@ -204,8 +204,10 @@ export default function GetQuote() {
                 transition={{ delay: 0.6 }}
                 className="mt-6 bg-gradient-to-r from-primary to-accent rounded-3xl p-6 text-white"
               >
-                <h4 className="text-xl font-bold mb-2">Quick Response</h4>
-                <p className="text-white/80 text-sm mb-4">
+                <h4 className="text-base md:text-xl font-bold mb-2">
+                  Quick Response
+                </h4>
+                <p className="text-white/80 text-xs md:text-sm mb-4">
                   Need immediate assistance? Reach out directly via WhatsApp or
                   schedule a call.
                 </p>
