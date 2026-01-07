@@ -69,6 +69,9 @@ const projectTypes = [
 ];
 
 export default function HireMe() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",

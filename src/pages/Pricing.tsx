@@ -326,6 +326,9 @@ const aiPrices = [
 ];
 
 export default function Pricing() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [activeTab, setActiveTab] = useState("websites");
   const getPrices = () => {
     switch (activeTab) {

@@ -8,6 +8,9 @@ import { allProjects } from "@/lib/projects";
 const categories = ["All", "Websites", "Management Systems", "AI & Automation"];
 
 export default function AllProjects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [activeCategory, setActiveCategory] = useState("All");
 
   const filteredProjects =

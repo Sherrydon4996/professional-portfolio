@@ -58,6 +58,9 @@ const budgetRanges = [
 ];
 
 export default function GetQuote() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
