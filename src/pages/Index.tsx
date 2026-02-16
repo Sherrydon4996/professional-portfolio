@@ -8,9 +8,9 @@ import SkillsSection from "@/components/SkillsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
-import FloatingButtons from "@/components/FloatingButtons";
 import StatsBanner from "@/components/StatsBanner";
 import { useEffect } from "react";
+import FloatingButtons from "@/components/AiHelper";
 const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
