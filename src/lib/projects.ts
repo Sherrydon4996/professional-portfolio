@@ -18,7 +18,7 @@ export const allProjects = [
       "Tailwind CSS",
       "Turso",
     ],
-    liveUrl: "https://tenants-smartrent.com/",
+    liveUrl: "https://tenants-smartrent.com/", //official link of the management system
     githubUrl: "#",
     gradient: "from-blue-500 to-cyan-500",
   },
