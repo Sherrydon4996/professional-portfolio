@@ -28,7 +28,7 @@ export const allProjects = [
     description:
       "Full-stack business management system for a cyber cafe — tracks income, expenses, PS gaming sessions, movie rentals, contributions, and features an AI financial advisor powered by Gemini.",
     category: "Management Systems",
-    image: projectImages.cyberCafeManager, // add this key to your assets
+    image: "/cyber-cafe-MS.png", // add this key to your assets
     // image: "/systems/cyber_cafe.png",
     technologies: [
       "React",
