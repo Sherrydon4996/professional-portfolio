@@ -18,9 +18,31 @@ export const allProjects = [
       "Tailwind CSS",
       "Turso",
     ],
-    liveUrl: "https://tenants-smartrent.com/", //official link of the management system
+    liveUrl: "https://tenants-smartrent.com/",
     githubUrl: "#",
     gradient: "from-blue-500 to-cyan-500",
+  },
+  {
+    id: 10,
+    title: "Cyber Cafe Business Manager",
+    description:
+      "Full-stack business management system for a cyber cafe — tracks income, expenses, PS gaming sessions, movie rentals, contributions, and features an AI financial advisor powered by Gemini.",
+    category: "Management Systems",
+    image: projectImages.cyberCafeManager, // add this key to your assets
+    // image: "/systems/cyber_cafe.png",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Express.js",
+      "SQLite",
+      "Turso",
+      "Tailwind CSS",
+      "Shadcn",
+      "Gemini AI",
+    ],
+    liveUrl: "https://business-management-frontend-rd7y.vercel.app/",
+    githubUrl: "#",
+    gradient: "from-violet-500 to-indigo-500",
   },
   {
     id: 7,
@@ -105,7 +127,6 @@ export const allProjects = [
     githubUrl: "#",
     gradient: "from-indigo-500 to-violet-500",
   },
-
   {
     id: 8,
     title: "Marketing Portfolio",
